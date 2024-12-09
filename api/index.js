@@ -14,6 +14,11 @@ app.use(express.json());
 app.use(express.static("./public"));
 
 // !Routes
+
+app.get("/", (req, res) => {
+  res.send("API is working!");
+});
+
 app.use("/api/v1/tasks", taskRouter);
 
 //!handle erros
