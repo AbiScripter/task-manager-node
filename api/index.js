@@ -2,10 +2,10 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
-const taskRouter = require("./routes/tasks");
-const connectDB = require("./db/connect");
-const notFound = require("./middleware/not-found");
-const errorHandlerMiddleware = require("./middleware/error-handler");
+const taskRouter = require("../routes/tasks");
+const connectDB = require("../db/connect");
+const notFound = require("../middleware/not-found");
+const errorHandlerMiddleware = require("../middleware/error-handler");
 
 // !Middleware
 //parse json data
